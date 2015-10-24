@@ -11,7 +11,7 @@ git fetch upstream (remote)
 git checkout master (local)
 git merge upstream/master
 git add --all
-git commit -m -a "Description"
+git commit -a -m "Description"
 git push origin master
 
 desktop client/browser save snapshots, roll back
