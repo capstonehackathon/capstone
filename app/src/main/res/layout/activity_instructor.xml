@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mycompany.capstone.InstructorActivity">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:context="com.mycompany.capstone.InstructorActivity"
+        android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvCourse"
+        android:hint="Course Name"
+        android:paddingBottom="15dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvUrl"
+        android:layout_below="@+id/tvCourse"
+        android:hint="Course Url" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload"
+        android:id="@+id/btUpload"
+        android:layout_below="@+id/tvCourse"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp" />
+
+    </RelativeLayout>
+</RelativeLayout>
