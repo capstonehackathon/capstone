@@ -10,7 +10,7 @@ This is a mini Android app to help students to have a more interactive syllabus.
 * [x] Students, upon picking a course/syllabus, can see the meetup events related to the syllabus.
 
 
-# Fundamental Steps for github
+Fundamental Steps for github
 
 fork master
 
