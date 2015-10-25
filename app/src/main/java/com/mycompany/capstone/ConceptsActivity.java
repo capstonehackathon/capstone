@@ -19,7 +19,7 @@ public class ConceptsActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_concepts);
 
-        //photos = getIntent().getStringArrayListExtra("concepts");
+        photos = (ArrayList<Concepts>)getIntent().getSerializableExtra("concepts");
 
         aPhotos = new ConceptsAdapter(this, photos);
         ListView lvPhotos = (ListView)findViewById(R.id.lvPhotos);
