@@ -20,7 +20,7 @@ public class MainActivity extends ActionBarActivity {
         btUpload.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(MainActivity.this, InstructorActivity.class);
+                Intent i = new Intent(MainActivity.this, StudentEventsActivity.class);
                 startActivity(i);
             }
         });
@@ -29,7 +29,7 @@ public class MainActivity extends ActionBarActivity {
         btUpload1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(MainActivity.this, InstructorActivity.class);
+                Intent i = new Intent(MainActivity.this, StudentEventsActivity.class);
                 startActivity(i);
             }
         });
