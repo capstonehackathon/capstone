@@ -49,7 +49,7 @@ public class InstructorActivity extends ActionBarActivity {
                     public void onSuccess(int statusCode, Header[] headers, JSONObject response)
                     {
                         Log.d("Debug ", response.toString());
-                        ArrayList<String> list = new ArrayList<String>();
+                        ArrayList<Concepts> list = new ArrayList<Concepts>();
 
                         try {
                             JSONArray imageResultsJson = response.getJSONArray("concepts");
@@ -57,11 +57,13 @@ public class InstructorActivity extends ActionBarActivity {
                             for(int i = 0; i < imageResultsJson.length(); i++) {
                                 JSONObject photoJson = imageResultsJson.getJSONObject(i);
                                 String text = photoJson.getString("text");
-                                list.add(text);
+                                String relevance = photoJson.getString("relevance");
+                                list.add(new Concepts(text, relevance));
                             }
 
-                            //Intent i = new Intent(InstructorActivity.this, ConceptsActivity.class);
-                            //i.putStringArrayListExtra("concepts", list);
+                            Intent i = new Intent(InstructorActivity.this, ConceptsActivity.class);
+                            i.putExtra("concepts", list);
+                            startActivity(i);
                             Log.i("DEBUG" , list.toString());
 
                         } catch (JSONException ex) {

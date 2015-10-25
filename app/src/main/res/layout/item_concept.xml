@@ -10,8 +10,8 @@
             android:typeface="sans"
             android:textColor="#19528c"
             android:textStyle="bold"
-            android:layout_centerVertical="true"
             android:paddingLeft="15dp"
+            android:ellipsize="end"
             />
 
         <TextView
@@ -22,10 +22,8 @@
         android:textStyle="bold"
         android:textSize="15sp"
         android:typeface="sans"
-        android:layout_alignRight="@+id/tvTag"
-        android:layout_centerVertical="true"
-        android:gravity="center"
-        android:drawablePadding="2dp"
+        android:paddingRight="15dp"
+
         android:textColor="#858585" />
 
 </RelativeLayout>
