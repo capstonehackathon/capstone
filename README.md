@@ -1,7 +1,16 @@
-# capstone
+# Android Capstone App
 Capstone for HackingEDU
 
-Fundamental Steps
+This is a mini Android app to help students to have a more interactive syllabus.
+
+#Functionalities:
+
+* [x] Instructors input a syllabus url.
+* [x] With the use of IBM Alchemy API, the concepts from the syllabus are extracted.
+* [x] Students, upon picking a course/syllabus, can see the meetup events related to the syllabus.
+
+
+# Fundamental Steps for github
 fork master
 local git clone https://forkurl
 git remote add upstream master url
